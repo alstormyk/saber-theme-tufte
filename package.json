@@ -1,8 +1,14 @@
 {
   "name": "saber-theme-tufte",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Tufte inspired theme for saber.js.",
+  "repository": "https://github.com/askcreative/saber-theme-tufte.git",
+  "author": "Amy <amy@askcreative.space>",
   "license": "MIT",
+  "private": false,
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "vue-compile src -o dist",
     "prepublishOnly": "yarn build",
