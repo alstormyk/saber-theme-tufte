@@ -1,0 +1,24 @@
+{
+  "name": "saber-theme-tufte",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "vue-compile src -o dist",
+    "prepublishOnly": "yarn build",
+    "dev:example": "saber example",
+    "generate:example": "saber generate example"
+  },
+  "devDependencies": {
+    "postcss-preset-env": "^6.6.0",
+    "prismjs": "^1.16.0",
+    "saber": "^0.4.3",
+    "saber-highlighter-prism": "^0.2.0",
+    "saber-plugin-query-posts": "^0.1.1",
+    "vue-prism-component": "^1.1.1"
+  },
+  "dependencies": {
+    "markdown-it-div": "^1.1.0",
+    "tinydate": "^1.0.1"
+  }
+}

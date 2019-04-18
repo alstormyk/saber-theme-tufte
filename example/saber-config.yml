@@ -1,0 +1,23 @@
+theme: ../src
+
+siteConfig:
+  url: 
+  author: Author of This Site
+  email: author@your-domain.com
+  title: Saber-Tufte-Theme
+  description: Write an awesome description for your new site here. You can edit this line in saber-config.yml. It will appear in your document head meta (for Google search results) site description.
+
+themeConfig:
+  nav: 
+    - text: Home
+      link: /
+    - text: About
+      link: /about.html
+    - text: Contact
+      link: /contact.html
+plugins:
+  - resolve: saber-plugin-query-posts
+markdown:
+  highlighter: prism
+  plugins:
+    - resolve: markdown-it-div
