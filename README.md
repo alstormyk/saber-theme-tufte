@@ -2,7 +2,7 @@
 
 # saber-theme-tufte
 
-[![npm](https://badgen.net/npm/v/)](https://npm.im/) 
+[![npm](https://badgen.net/npm/v/saber-theme-tufte)](https://npm.im/saber-theme-tufte)
 
 > A Saber theme inspired by Tufte.
 
