@@ -12,18 +12,6 @@
         </time>
       </p>
       <section class="post-content e-content">
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({
-            extensions: ["tex2jax.js"],
-            jax: ["input/TeX", "output/HTML-CSS"],
-            tex2jax: {
-              inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-              displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-              processEscapes: true
-            },
-            "HTML-CSS": { fonts: ["TeX"] }
-          });
-        </script>
         <slot name="default"/>
       </section>
     </article>
@@ -54,6 +42,28 @@ export default {
   props: ['page'],
   methods: {
     formatDate
+  },
+ mounted () {
+   if (window.MathJax) {
+        window.MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [['$', '$'], ["\\(","\\)"]],
+            displayMath: [['$$', '$$'], ["\\[","\\]"]],
+            processEscapes: true,
+            processEnvironments: true
+          },
+          displayAlign: 'center',
+          'HTML-CSS': {
+            fonts: ["TeX"],
+            styles: { '.MathJax_Display': { margin: 0 } },
+            linebreaks: { automatic: true }
+          }
+        })
+        window.MathJax.Hub.Queue([
+          'Typeset',
+          window.MathJax.Hub
+        ])
+      }
   },
   head() {
     const pageTitle = this.page.attributes.title
