@@ -1,6 +1,6 @@
 {
   "name": "saber-theme-tufte",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tufte inspired theme for saber.js.",
   "repository": "https://github.com/askcreative/saber-theme-tufte.git",
   "author": "Amy <amy@askcreative.space>",
@@ -25,7 +25,6 @@
     "vue-prism-component": "^1.1.1"
   },
   "dependencies": {
-    "markdown-it-div": "^1.1.0",
     "tinydate": "^1.0.1"
   }
 }

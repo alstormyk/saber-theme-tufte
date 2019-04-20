@@ -12,8 +12,29 @@
         </time>
       </p>
       <section class="post-content e-content">
+        <p>
+          <label for="cloud" class="margin-toggle">&#8853;</label>
+<input type="checkbox" id="cloud" class="margin-toggle"/>
+<span class="marginnote">
+ <div class="tags" v-if="tags">
+   <strong>Tags</strong><br>
+      <saber-link class="tag" :to="`/tags/${tag}`" v-for="tag in tags" :key="tag">
+        {{ tag }}
+      </saber-link>
+    </div>
+    <br>
+    <div class="categories" v-if="categories">
+      <strong>Categories</strong><br>
+      <saber-link class="category" :to="`/categories/${category}`" v-for="category in categories" :key="category">
+        {{ category }}
+      </saber-link>
+    </div>
+</span>
+          </p>
         <slot name="default"/>
-      </section>
+ 
+
+    </section>
     </article>
     <div class="pagination">
       <router-link class="prev" v-if="page.prevPost" :to="page.prevPost.attributes.permalink">
@@ -42,6 +63,14 @@ export default {
   props: ['page'],
   methods: {
     formatDate
+  },
+  computed: {
+    tags() {
+      return this.page.attributes.tags && this.page.attributes.tags.sort()
+    },
+    categories() {
+      return this.page.attributes.categories && this.page.attributes.categories.sort()
+    }
   },
  mounted () {
    if (window.MathJax) {

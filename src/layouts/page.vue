@@ -1,6 +1,9 @@
 <template>
   <div class="layout">
     <Header />
+    <article class="post-content e-content">
+      <slot name="default"/>
+    </article>
     <Footer />
   </div>
 </template>

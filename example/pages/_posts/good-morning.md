@@ -2,6 +2,10 @@
 layout: post
 title:  Good Morning
 date: 2016-04-01
+tags: 
+ - diary
+categories:
+ - life
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed orci nec erat sollicitudin laoreet.

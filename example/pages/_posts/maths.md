@@ -3,6 +3,10 @@ title: Maths
 date: 2019-04-18
 layout: post
 excerpt: Mathjax examples
+tags: 
+ - example
+categories:
+ - maths
 ---
 
 # Mathjax Example Tutorial

@@ -2,13 +2,21 @@
   <div class="layout">
     <Header />
       <h1 class="site-title">
-      {{ $themeConfig.headerTitle || $siteConfig.title }}
+      {{ page.attributes.title || $themeConfig.headerTitle || $siteConfig.title }}
       </h1>
-      <h2 class="site-subtitle"> {{ page.attributes.homeSubtitle }}
+      <h2 class="site-subtitle"> {{ page.attributes.subtitle }}
       </h2>
       <p class="site-description">
-        {{ page.attributes.homeDescription }}
+        {{ page.attributes.description }}
       </p>
+      <div class="tag" v-if="page.tag">
+        <h2> Tag</h2>
+        <h3># {{ page.tag }}</h3>
+      </div>
+      <div class="category" v-if="page.category">
+        <h2>Category</h2>
+        <h3 class="site-description"># {{ page.category }}</h3>
+        </div>
       <article class="content" v-if="page.posts">
         <saber-link v-for="post in page.posts" :key="post.permalink"
           :to="post.attributes.permalink">
@@ -85,7 +93,7 @@ p.site-description {
 }
 .item-title h2 {
   text-decoration: underline;
-  text-decoration-color: rgba(18, 18, 18, 0.50);
+  text-decoration-color: rgba(105, 0, 19, .50);
 }
 .item-time {
   font-style: italic;

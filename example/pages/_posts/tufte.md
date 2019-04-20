@@ -2,7 +2,12 @@
 layout: post
 title: Tufte in markdown
 date: 2019-04-14
-excerpt: Tufte’s style is known for its simplicity, extensive use of sidenotes, tight integration of graphics with text, and carefully chosen typography. 
+excerpt: Tufte’s style is known for its simplicity, extensive use of sidenotes, tight integration of graphics with text, and carefully chosen typography.
+tags: 
+ - tufte
+ - example
+categories:
+ - css
 ---
 # Tufte CSS
 

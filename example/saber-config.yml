@@ -15,9 +15,10 @@ themeConfig:
       link: /about.html
     - text: Contact
       link: /contact.html
+  social:
+    twitter: _saberjs
+    github: egoist
 plugins:
   - resolve: saber-plugin-query-posts
 markdown:
   highlighter: prism
-  plugins:
-    - resolve: markdown-it-div
