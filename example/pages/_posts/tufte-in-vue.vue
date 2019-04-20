@@ -155,9 +155,7 @@
     layout: 'post',
     title: 'Tufte in Vue',
     date: '2019-02-23',
-    excerpt: 'A tufte example.',
-    tags: 'tufte, example',
-    categories: 'css'
+    excerpt: 'A tufte example.'
   }
   export default {
     components: {
