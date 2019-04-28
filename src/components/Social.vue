@@ -83,10 +83,16 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 ul.social-media-list {
   list-style-type: none;
   display: flex;
   align-items: center;
+}
+li {
+  padding: .5rem;
+}
+li:not(:first-child) {
+  margin-top: 0;
 }
 </style>

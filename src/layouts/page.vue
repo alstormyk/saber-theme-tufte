@@ -1,10 +1,13 @@
 <template>
-  <div class="layout">
+<div>
     <Header />
+    <div class="layout">
     <article class="post-content e-content">
       <slot name="default"/>
     </article>
+    
     <Footer />
+    </div>
   </div>
 </template>
 

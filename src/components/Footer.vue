@@ -1,24 +1,16 @@
 <template>
-  <article class="footer">
-    <section>
-      <ul class="footer-top">
-        <li class="footer-title">{{ $siteConfig.title }}
-        </li>
-        <li class="author">
-          {{ $siteConfig.author }}
-        </li>
-        <li v-if="$siteConfig.email">
-          <a class="site-email" :href="`mailto:${$siteConfig.email}`">{{ $siteConfig.email }}</a>
-        </li>
-        <li class="footer-right">
-          {{ $siteConfig.description }}
-        </li>
-      </ul>
-      <ul class="footer-bottom">
+  <footer class="footer">
+    <hr>
+
         <Social />
-      </ul>
-    </section>
-  </article>
+
+<div class="footer-bottom">
+        <div class="author">
+          {{ $siteConfig.author }}
+          <a class="site-email" :href="`mailto:${$siteConfig.email}`">{{ $siteConfig.email }}</a>
+        </div>
+</div>
+  </footer>
 </template>
 
 <script>
@@ -31,34 +23,15 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .footer {
-  margin: 4rem 0;
-  padding: 1.5rem .5rem .5rem;
-  min-width: 50%;
+  margin: 2rem;
+  padding: 4rem 2rem 0;
   font-size: 1.1rem;
-}
-.footer-title {
-  font-size: 1.7rem;
-  font-style: italic;
 }
 a.site-email:link {
   text-decoration: none;
   background: none;
-}
-ul.footer-top {
-  font-size: 1.1rem;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1rem;
-  width: 80%
-}
-li.footer-right {
-  max-width: 40%;
-}
-li {
-  padding: 0 1rem;
+  padding-left: 2rem;
 }
 </style>

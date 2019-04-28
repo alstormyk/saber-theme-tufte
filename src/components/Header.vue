@@ -25,15 +25,17 @@ export default {
     
 }
 </script>
-<style>
+<style scoped>
 .nav-bar {
   top: 0;
+  left: 0;
   position: fixed;
   z-index: 20;
   margin: 0;
-  padding: 1.5rem .5rem .5rem;
-  min-width: 60%;
+  padding: 1rem .5rem .5rem;
+  min-width: 100%;
   background: #fffff8;
+  border-bottom: 1px solid rgba(140, 12, 35, 0.2);
 }
 ul.nav {
   list-style-type: none;
@@ -43,6 +45,7 @@ ul.nav {
 }
 li.nav-title {
   padding-top: 0.5rem;
+  padding-left: 0.5rem;
   float: left;
   font-size: 1.3rem;
   font-weight: 600;
@@ -58,8 +61,11 @@ li a {
   text-decoration: none;
 }
 ul.nav-items {
+  font-size: 1.1rem;
+  font-weight: 500;
   list-style-type: none;
   float: right;
+  padding-right: 2rem;
 }
 li.nav-item {
   margin-top: 0;
@@ -92,16 +98,16 @@ li.nav-item:not(:first-child) {
   content: '';
   right: 0;
   top: 0;
-  border-top: 3px solid #690013;
-  border-right: 3px solid #690013;
+  border-top: 3px solid #8C0C23;
+  border-right: 3px solid #8C0C23;
   transform: translate(-100%, 50%);
 }
 .nav-item a:after {
   content: '';
   left: 0;
   bottom: 0;
-  border-bottom: 3px solid #690013;
-  border-left: 3px solid #690013;
+  border-bottom: 3px solid #8C0C23;
+  border-left: 3px solid #8C0C23;
   transform: translate(100%, -50%)
 }
 .nav-item a:hover:before,
@@ -110,6 +116,27 @@ li.nav-item:not(:first-child) {
   opacity: 1;
 }
 .nav-item a:hover {
-  color: #690013;
+  color: #8C0C23;
+}
+
+@media (max-width: 700px) {
+  li.nav-item {
+    margin-left: 0;
+  }
+}
+@media (max-width: 620px) {
+  li {
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  li.nav-title {
+    padding-top: 0;
+    font-size: 1rem;
+  }
+  ul.nav-items {
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
 }
 </style>

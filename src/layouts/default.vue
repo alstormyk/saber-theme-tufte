@@ -1,6 +1,7 @@
 <template>
-  <div class="layout">
+  <div>
     <Header />
+    <div class="layout">
       <h1 class="site-title">
       {{ page.attributes.title || $themeConfig.headerTitle || $siteConfig.title }}
       </h1>
@@ -56,7 +57,9 @@
           <em> {{ $siteConfig.pagination && $siteConfig.pagination.prevPage || 'Next' }} &#8594;</em>
         </router-link>
       </div>
+     
     <Footer />
+     </div>
   </div>
 </template>
 
@@ -118,7 +121,7 @@ figure.card:hover {
     border-image: 
     linear-gradient(
       to bottom,
-      #690013, 
+      #8C0C23, 
       rgba(17,17,17,1)
     ) 1 100%;
 }
@@ -157,16 +160,16 @@ figure.card:hover {
   content: '';
   right: 0;
   top: 0;
-  border-top: 4px solid #690013;
-  border-right: 4px solid #690013;
+  border-top: 4px solid #8C0C23;
+  border-right: 4px solid #8C0C23;
   transform: translate(-100%, 50%);
 }
 .pagination a:after {
   content: '';
   left: 0;
   bottom: 0;
-  border-bottom: 4px solid #690013;
-  border-left: 4px solid #690013;
+  border-bottom: 4px solid #8C0C23;
+  border-left: 4px solid #8C0C23;
   transform: translate(100%, -50%)
 }
 .pagination a:hover:before,
@@ -175,6 +178,6 @@ figure.card:hover {
   opacity: 1;
 }
 .pagination a:hover {
-  color: #690013;
+  color: #8C0C23;
 }
 </style>

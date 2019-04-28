@@ -1,6 +1,8 @@
 <template>
+<div>
+<Header />
   <div class="layout">
-    <Header />
+    
     <article>
       <h1 class="post-title">{{ page.attributes.title }}</h1>
       <p class="post-meta">
@@ -46,7 +48,9 @@
         <p class="subtitle">{{ page.nextPost.attributes.title }}</p>
       </router-link>
     </div>
+   
     <Footer />
+     </div>
   </div>
 </template>
 
@@ -106,7 +110,7 @@ export default {
 </script>
 <style>
 .pagination {
-  max-width: 50%;
+  max-width: 70%;
   padding-bottom: 1.5rem;
 }
 .prev {
@@ -140,16 +144,16 @@ export default {
   content: '';
   right: 0;
   top: 0;
-  border-top: 4px solid #690013;
-  border-right: 4px solid #690013;
+  border-top: 4px solid #8C0C23;
+  border-right: 4px solid #8C0C23;
   transform: translate(-100%, 50%);
 }
 .pagination a:after {
   content: '';
   left: 0;
   bottom: 0;
-  border-bottom: 4px solid #690013;
-  border-left: 4px solid #690013;
+  border-bottom: 4px solid #8C0C23;
+  border-left: 4px solid #8C0C23;
   transform: translate(100%, -50%)
 }
 .pagination a:hover:before,
@@ -158,6 +162,6 @@ export default {
   opacity: 1;
 }
 .pagination a:hover {
-  color: #690013;
+  color: #8C0C23;
 }
 </style>
