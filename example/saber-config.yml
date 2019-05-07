@@ -15,9 +15,8 @@ themeConfig:
       link: /about.html
     - text: Contact
       link: /contact.html
-  social:
-    twitter: _saberjs
-    github: egoist
+    - text: MathPage
+      link: /mathpage.html
 plugins:
   - resolve: saber-plugin-query-posts
 markdown:

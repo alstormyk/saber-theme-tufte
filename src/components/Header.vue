@@ -21,9 +21,6 @@
 </template>
 
 <script>
-export default {
-    
-}
 </script>
 <style scoped>
 .nav-bar {
@@ -34,7 +31,7 @@ export default {
   margin: 0;
   padding: 1rem .5rem .5rem;
   min-width: 100%;
-  background: #fffff8;
+  background: var(--backgroundColor);
   border-bottom: 1px solid rgba(140, 12, 35, 0.2);
 }
 ul.nav {
@@ -98,16 +95,16 @@ li.nav-item:not(:first-child) {
   content: '';
   right: 0;
   top: 0;
-  border-top: 3px solid #8C0C23;
-  border-right: 3px solid #8C0C23;
+  border-top: 3px solid var(--accentColor);
+  border-right: 3px solid var(--accentColor);
   transform: translate(-100%, 50%);
 }
 .nav-item a:after {
   content: '';
   left: 0;
   bottom: 0;
-  border-bottom: 3px solid #8C0C23;
-  border-left: 3px solid #8C0C23;
+  border-bottom: 3px solid var(--accentColor);
+  border-left: 3px solid var(--accentColor);
   transform: translate(100%, -50%)
 }
 .nav-item a:hover:before,
@@ -116,7 +113,7 @@ li.nav-item:not(:first-child) {
   opacity: 1;
 }
 .nav-item a:hover {
-  color: #8C0C23;
+  color: var(--accentColor);
 }
 
 @media (max-width: 700px) {

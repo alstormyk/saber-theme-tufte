@@ -5,4 +5,4 @@ title: Contact
 
 # Contact Me
 
-Bye
+Bye Bye

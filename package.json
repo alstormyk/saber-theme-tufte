@@ -18,9 +18,9 @@
   "devDependencies": {
     "postcss-preset-env": "^6.6.0",
     "prismjs": "^1.16.0",
-    "saber": "^0.4.3",
-    "saber-highlighter-prism": "^0.2.0",
-    "saber-plugin-query-posts": "^0.1.1",
+    "saber": "^0.4.10",
+    "saber-highlighter-prism": "^0.2.2",
+    "saber-plugin-query-posts": "^0.1.5",
     "vue-compile": "^0.5.3",
     "vue-prism-component": "^1.1.1"
   },

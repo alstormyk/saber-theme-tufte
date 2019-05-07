@@ -1,9 +1,9 @@
 import './styles/tufte.css'
 import Vue from 'vue'
-import "prismjs";
-import "prismjs/themes/prism.css";
-import Prism from "vue-prism-component";
-Vue.component("prism", Prism);
+import "prismjs"
+import "prismjs/themes/prism.css"
+import Prism from "vue-prism-component"
+Vue.component("prism", Prism)
 
 export default ({ rootOptions }) => {
     rootOptions.head = function () {

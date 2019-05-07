@@ -1,26 +1,16 @@
 <template>
   <footer class="footer">
     <hr>
-
-        <Social />
-
-<div class="footer-bottom">
-        <div class="author">
-          {{ $siteConfig.author }}
-          <a class="site-email" :href="`mailto:${$siteConfig.email}`">{{ $siteConfig.email }}</a>
-        </div>
-</div>
+    <div class="footer-bottom">
+      <div class="author">
+        {{ $siteConfig.author }}
+        <a class="site-email" :href="`mailto:${$siteConfig.email}`">{{ $siteConfig.email }}</a>
+      </div>
+    </div>
   </footer>
 </template>
 
 <script>
-import Social from './Social.vue'
-
-export default {
-  components: {
-    Social
-  }
-}
 </script>
 
 <style scoped>

@@ -109,8 +109,8 @@ figure.card {
     border-image: 
     linear-gradient(
       to bottom,
-      #fffff8,
-      #111,  
+      var(--backgroundColor),
+      var(--textColor),  
       rgba(255,255,248,1)
     ) 1 100%;
   transition: all .4s ease;
@@ -121,7 +121,7 @@ figure.card:hover {
     border-image: 
     linear-gradient(
       to bottom,
-      #8C0C23, 
+      var(--accentColor), 
       rgba(17,17,17,1)
     ) 1 100%;
 }
@@ -160,16 +160,16 @@ figure.card:hover {
   content: '';
   right: 0;
   top: 0;
-  border-top: 4px solid #8C0C23;
-  border-right: 4px solid #8C0C23;
+  border-top: 4px solid var(--accentColor);
+  border-right: 4px solid var(--accentColor);
   transform: translate(-100%, 50%);
 }
 .pagination a:after {
   content: '';
   left: 0;
   bottom: 0;
-  border-bottom: 4px solid #8C0C23;
-  border-left: 4px solid #8C0C23;
+  border-bottom: 4px solid var(--accentColor);
+  border-left: 4px solid var(--accentColor);
   transform: translate(100%, -50%)
 }
 .pagination a:hover:before,
@@ -178,6 +178,6 @@ figure.card:hover {
   opacity: 1;
 }
 .pagination a:hover {
-  color: #8C0C23;
+  color: var(--accentColor);
 }
 </style>

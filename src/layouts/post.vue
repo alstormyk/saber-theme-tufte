@@ -1,56 +1,52 @@
 <template>
-<div>
-<Header />
-  <div class="layout">
-    
-    <article>
-      <h1 class="post-title">{{ page.attributes.title }}</h1>
-      <p class="post-meta">
-        <time
-        class="post-published"
-        :datetime="page.attributes.createdAt"
-        itemprop="datePublished"
-        >{{ formatDate(page.attributes.createdAt) }}
-        </time>
-      </p>
-      <section class="post-content e-content">
-        <p>
-          <label for="cloud" class="margin-toggle">&#8853;</label>
-<input type="checkbox" id="cloud" class="margin-toggle"/>
-<span class="marginnote">
- <div class="tags" v-if="tags">
-   <strong>Tags</strong><br>
-      <saber-link class="tag" :to="`/tags/${tag}`" v-for="tag in tags" :key="tag">
-        {{ tag }}
-      </saber-link>
-    </div>
-    <br>
-    <div class="categories" v-if="categories">
-      <strong>Categories</strong><br>
-      <saber-link class="category" :to="`/categories/${category}`" v-for="category in categories" :key="category">
-        {{ category }}
-      </saber-link>
-    </div>
-</span>
+  <div>
+  <Header />
+    <div class="layout">
+      <article>
+        <h1 class="post-title">{{ page.attributes.title }}</h1>
+        <p class="post-meta">
+          <time
+          class="post-published"
+          :datetime="page.attributes.createdAt"
+          itemprop="datePublished"
+          >{{ formatDate(page.attributes.createdAt) }}
+          </time>
+        </p>
+        <section class="post-content e-content">
+          <p>
+            <label for="cloud" class="margin-toggle">&#8853;</label>
+            <input type="checkbox" id="cloud" class="margin-toggle"/>
+            <span class="marginnote">
+              <div class="tags" v-if="tags">
+                <strong>Tags</strong><br>
+                <saber-link class="tag" :to="`/tags/${tag}`" v-for="tag in tags" :key="tag">
+                 {{ tag }}
+                </saber-link>
+              </div>
+              <br>
+              <div class="categories" v-if="categories">
+                <strong>Categories</strong><br>
+                <saber-link class="category" :to="`/categories/${category}`" v-for="category in categories" :key="category">
+                 {{ category }}
+                </saber-link>
+              </div>
+            </span>
           </p>
-        <slot name="default"/>
- 
-
-    </section>
-    </article>
-    <div class="pagination">
-      <router-link class="prev" v-if="page.prevPost" :to="page.prevPost.attributes.permalink">
-        <em> &#8592; {{ $siteConfig.pagination && $siteConfig.pagination.prevPost || 'Previous' }} </em>
-        <p class="subtitle">{{ page.prevPost.attributes.title }}</p>
-      </router-link>
-      <router-link class="next" v-if="page.nextPost" :to="page.nextPost.attributes.permalink">
-        <em>{{ $siteConfig.pagination && $siteConfig.pagination.nextPost || 'Next' }} &#8594;</em>
-        <p class="subtitle">{{ page.nextPost.attributes.title }}</p>
-      </router-link>
+          <slot name="default"/>
+        </section>
+      </article>
+      <div class="pagination">
+        <router-link class="prev" v-if="page.prevPost" :to="page.prevPost.attributes.permalink">
+          <em> &#8592; {{ $siteConfig.pagination && $siteConfig.pagination.prevPost || 'Previous' }} </em>
+          <p class="subtitle">{{ page.prevPost.attributes.title }}</p>
+        </router-link>
+        <router-link class="next" v-if="page.nextPost" :to="page.nextPost.attributes.permalink">
+          <em>{{ $siteConfig.pagination && $siteConfig.pagination.nextPost || 'Next' }} &#8594;</em>
+          <p class="subtitle">{{ page.nextPost.attributes.title }}</p>
+        </router-link>
+      </div>
+      <Footer />
     </div>
-   
-    <Footer />
-     </div>
   </div>
 </template>
 

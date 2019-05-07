@@ -6,6 +6,8 @@ tags:
  - diary
 categories:
  - life
+openGraph:
+  title: hey hey
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed orci nec erat sollicitudin laoreet.
