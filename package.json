@@ -13,7 +13,7 @@
     "build": "vue-compile src -o dist",
     "prepublishOnly": "yarn build",
     "dev:example": "saber example",
-    "generate:example": "saber generate example"
+    "build:example": "saber build example"
   },
   "devDependencies": {
     "postcss-preset-env": "^6.6.0",
