@@ -124,6 +124,7 @@ figure.card:hover {
       rgba(17,17,17,1)
     ) 1 100%;
 }
+
 .pagination {
   max-width: 50%;
   padding-bottom: 1.5rem;
@@ -142,9 +143,5 @@ figure.card:hover {
 }
 .pagination a:hover {
   color: var(--accentColor);
-}
-.pagination a:focus {
-  outline: none !important;
-  box-shadow: none !important;
 }
 </style>

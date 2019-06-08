@@ -60,14 +60,15 @@ body {
     font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     background-color: var(--backgroundColor);
     color: var(--textColor);
+    position: relative;
+    min-height: 100vh;
 }
-
 .layout { 
     width: 87.5%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1rem;
     padding-left: 12.5%;
+    padding-bottom: 150px; /*footer height*/
     max-width: 1400px;
     counter-reset: sidenote-counter; 
 }
@@ -261,6 +262,10 @@ a:link::selection {
 a:link::-moz-selection { 
     text-shadow: 0.03em 0 var(--secondaryColor), -0.03em 0 var(--secondaryColor), 0 0.03em var(--secondaryColor), 0 -0.03em var(--secondaryColor), 0.06em 0 var(--secondaryColor), -0.06em 0 var(--secondaryColor), 0.09em 0 var(--secondaryColor), -0.09em 0 var(--secondaryColor), 0.12em 0 var(--secondaryColor), -0.12em 0 var(--secondaryColor), 0.15em 0 var(--secondaryColor), -0.15em 0 var(--secondaryColor);
     background: var(--secondaryColor); 
+}
+a:link {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 /* Sidenotes, margin notes, figures, captions */

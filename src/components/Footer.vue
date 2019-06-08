@@ -16,6 +16,10 @@
 
 <style scoped>
 .footer {
+  position: absolute;
+  margin-top: -150px;  /* negative value of footer height */
+  height: 150px;
+  bottom: 0;
   min-width: 100%;
   font-size: 1.1rem;
   line-height: 2rem;

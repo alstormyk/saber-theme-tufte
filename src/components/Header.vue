@@ -79,11 +79,6 @@ li.nav-item:not(:first-child) {
 .nav-item:hover {
   color: var(--accentColor);
 }
-.nav-title a:focus,
-.nav-item a:focus {
-  outline: none !important;
-  box-shadow: none !important;
-}
 
 @media (max-width: 700px) {
   li.nav-item {
