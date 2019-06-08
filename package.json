@@ -1,6 +1,6 @@
 {
   "name": "saber-theme-tufte",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tufte inspired theme for saber.js.",
   "repository": "https://github.com/askcreative/saber-theme-tufte.git",
   "author": "Amy <amy@askcreative.space>",
@@ -18,13 +18,13 @@
   "devDependencies": {
     "postcss-preset-env": "^6.6.0",
     "prismjs": "^1.16.0",
-    "saber": "^0.4.10",
-    "saber-highlighter-prism": "^0.2.2",
-    "saber-plugin-query-posts": "^0.1.5",
+    "saber": "^0.6.7",
+    "saber-highlighter-prism": "^0.3.1",
+    "saber-plugin-query-posts": "^0.3.2",
     "vue-compile": "^0.5.3",
     "vue-prism-component": "^1.1.1"
   },
   "dependencies": {
-    "tinydate": "^1.0.1"
+    "tinydate": "^1.1.0"
   }
 }

@@ -1,9 +1,10 @@
 <template>
   <footer class="footer">
     <hr>
-    <div class="footer-bottom">
+    <div class="footer-content">
       <div class="author">
         {{ $siteConfig.author }}
+        <br>
         <a class="site-email" :href="`mailto:${$siteConfig.email}`">{{ $siteConfig.email }}</a>
       </div>
     </div>
@@ -15,13 +16,18 @@
 
 <style scoped>
 .footer {
-  margin: 2rem;
-  padding: 4rem 2rem 0;
+  min-width: 100%;
   font-size: 1.1rem;
+  line-height: 2rem;
+  overflow: hidden;
+  border-top: 1px solid rgba(140, 12, 35, 0.2);
+}
+.footer-content {
+  text-align: center;
+  margin: 2rem;
 }
 a.site-email:link {
   text-decoration: none;
   background: none;
-  padding-left: 2rem;
 }
 </style>

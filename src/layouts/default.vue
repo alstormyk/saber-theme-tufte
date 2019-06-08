@@ -57,9 +57,8 @@
           <em> {{ $siteConfig.pagination && $siteConfig.pagination.prevPage || 'Next' }} &#8594;</em>
         </router-link>
       </div>
-     
+    </div>
     <Footer />
-     </div>
   </div>
 </template>
 
@@ -141,43 +140,11 @@ figure.card:hover {
   text-decoration: none;
   background: none;
 }
-.pagination a {
-  padding: .5em 1.2em;
-  position: relative;
-  text-decoration: none;
-  background: none;
-}
-.pagination a::before,
-.pagination a::after {
-  content: '';
-  height: 14px;
-  width: 14px;
-  position: absolute;
-  transition: all .35s ease;
-  opacity: 0;
-}
-.pagination a::before {
-  content: '';
-  right: 0;
-  top: 0;
-  border-top: 4px solid var(--accentColor);
-  border-right: 4px solid var(--accentColor);
-  transform: translate(-100%, 50%);
-}
-.pagination a:after {
-  content: '';
-  left: 0;
-  bottom: 0;
-  border-bottom: 4px solid var(--accentColor);
-  border-left: 4px solid var(--accentColor);
-  transform: translate(100%, -50%)
-}
-.pagination a:hover:before,
-.pagination a:hover:after{
-  transform: translate(0,0);
-  opacity: 1;
-}
 .pagination a:hover {
   color: var(--accentColor);
+}
+.pagination a:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 </style>

@@ -66,6 +66,7 @@ body {
     width: 87.5%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1rem;
     padding-left: 12.5%;
     max-width: 1400px;
     counter-reset: sidenote-counter; 
@@ -405,8 +406,8 @@ label.margin-toggle:not(.sidenote-number) {
 @media (max-width: 760px) { 
     body { 
         width: 84%;
-        padding-left: 8%;
-        padding-right: 8%; 
+        padding-left: 4%;
+        padding-right: 4%; 
     }
     hr, section > p, section > footer, section > table { 
         width: 100%; 

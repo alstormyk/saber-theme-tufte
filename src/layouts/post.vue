@@ -36,17 +36,17 @@
         </section>
       </article>
       <div class="pagination">
-        <router-link class="prev" v-if="page.prevPost" :to="page.prevPost.attributes.permalink">
+        <router-link class="prev" v-if="page.prevPost" :to="page.prevPost.permalink">
           <em> &#8592; {{ $siteConfig.pagination && $siteConfig.pagination.prevPost || 'Previous' }} </em>
-          <p class="subtitle">{{ page.prevPost.attributes.title }}</p>
+          <p class="subtitle">{{ page.prevPost.title }}</p>
         </router-link>
-        <router-link class="next" v-if="page.nextPost" :to="page.nextPost.attributes.permalink">
+        <router-link class="next" v-if="page.nextPost" :to="page.nextPost.permalink">
           <em>{{ $siteConfig.pagination && $siteConfig.pagination.nextPost || 'Next' }} &#8594;</em>
-          <p class="subtitle">{{ page.nextPost.attributes.title }}</p>
+          <p class="subtitle">{{ page.nextPost.title }}</p>
         </router-link>
       </div>
+      </div>
       <Footer />
-    </div>
   </div>
 </template>
 
@@ -127,37 +127,7 @@ export default {
   text-decoration: none;
   background: none;
 }
-.pagination a::before,
-.pagination a::after {
-  content: '';
-  height: 14px;
-  width: 14px;
-  position: absolute;
-  transition: all .35s ease;
-  opacity: 0;
-}
-.pagination a::before {
-  content: '';
-  right: 0;
-  top: 0;
-  border-top: 4px solid #8C0C23;
-  border-right: 4px solid #8C0C23;
-  transform: translate(-100%, 50%);
-}
-.pagination a:after {
-  content: '';
-  left: 0;
-  bottom: 0;
-  border-bottom: 4px solid #8C0C23;
-  border-left: 4px solid #8C0C23;
-  transform: translate(100%, -50%)
-}
-.pagination a:hover:before,
-.pagination a:hover:after{
-  transform: translate(0,0);
-  opacity: 1;
-}
 .pagination a:hover {
-  color: #8C0C23;
+  color: var(--accentColor);
 }
 </style>

@@ -5,8 +5,8 @@
     <article class="post-content e-content">
       <slot name="default"/>
     </article>
-    <Footer />
     </div>
+    <Footer />
   </div>
 </template>
 
