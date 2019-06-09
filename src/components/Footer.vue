@@ -1,6 +1,5 @@
 <template>
   <footer class="footer">
-    <hr>
     <div class="footer-content">
       <div class="author">
         {{ $siteConfig.author }}
@@ -16,19 +15,16 @@
 
 <style scoped>
 .footer {
-  position: absolute;
-  margin-top: -150px;  /* negative value of footer height */
-  height: 150px;
-  bottom: 0;
   min-width: 100%;
   font-size: 1.1rem;
   line-height: 2rem;
   overflow: hidden;
-  border-top: 1px solid rgba(140, 12, 35, 0.2);
+  min-height: 10vh;
 }
 .footer-content {
+  border-top: 1px solid rgba(140, 12, 35, 0.2);
   text-align: center;
-  margin: 2rem;
+  padding: 1rem;
 }
 a.site-email:link {
   text-decoration: none;
